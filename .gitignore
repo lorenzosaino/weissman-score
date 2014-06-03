@@ -1,0 +1,8 @@
+# Ignore binaries and temp files
+*.pyc
+__pycache__
+*~ 
+
+# Ignore all files starting with . (e.g. .*project) but not .gitignore
+.*
+!.gitignore

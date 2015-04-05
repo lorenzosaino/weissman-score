@@ -1,6 +1,6 @@
 # Weissman score calculator
 
-This repo contains a Python module to compute the Weissman Score of a
+This repository contains a Python module to compute the Weissman Score of a
 compression algorithm.
 
 The Weissman Score is a fictional perfomance score for lossless data compression
@@ -13,10 +13,10 @@ W = alpha \* r/r<sub>b</sub> \* log(T<sub>b</sub>)/log(T)
 
 where *r* and *T* refer to the compression ratio and time-to-compress
 of the target algorithm, *r<sub>b</sub>* and *T<sub>b</sub>* refer to same quantities for a
-standard universal compressor (in this implementation gzip is used) and
+standard universal compressor (this implementation uses gzip) and
 *alpha* is a scaling constant. 
 
-Further information [here](http://online.wsj.com/news/articles/SB10001424052702303987004579479244213599118).
+Further information [here](http://online.wsj.com/news/articles/SB10001424052702303987004579479244213599118) and [here](http://spectrum.ieee.org/view-from-the-valley/computing/software/a-madefortv-compression-metric-moves-to-the-real-world).
 
 ## Usage
 
@@ -32,7 +32,7 @@ Where:
  * `alpha` is the scaling parameter of the Weissman score
  * `reps` is the number of times the experiment needs to be repeated (mean values are taken to compute the score)
  
-A trivial usage example to comput bzip score is:
+A trivial usage example to compute bzip score is:
 
     python weissman.py -c "bzip2 --keep README.md" -i README.md -o README.md.bz2 -a 1.0 -r 5
 

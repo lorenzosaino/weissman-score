@@ -134,7 +134,8 @@ def weissman(command, fname_in, fname_out, alpha, reps):
     return alpha * (r/r_b) * (log(T_b)/log(T))
 
 def main():
-    parser = argparse.ArgumentParser(description="Compute Weissman Score of a lossless compression algorithm")
+    parser = argparse.ArgumentParser(description="Compute Weissman Score of a "
+                                     "lossless compression algorithm")
     parser.add_argument("-v", "--version", action="version",
                         version="%s" % __version__)
     parser.add_argument("-c", "--command", dest="command",
